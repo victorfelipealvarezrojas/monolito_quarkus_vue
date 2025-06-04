@@ -18,7 +18,7 @@ public class ContactResource {
 
     @GET
     public List<Contact> getAllContacts() {
-        return entityManager.createQuery("from contact", Contact.class).getResultList();
+        return entityManager.createQuery("from Contact",Contact.class).getResultList();
     }
 
     @GET
